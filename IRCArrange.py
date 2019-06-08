@@ -4,7 +4,7 @@ import re
 
 #########################################################################
 #                              IRCArrange                               #
-# Made by:  LeoLugo                                                     #                 
+# Made by:  LeoLugoF                                                    #                 
 # Date:     08/June/2019                                                #
 #                                                                       #
 # This program reads gaussian output files with .log or .out termation. #
