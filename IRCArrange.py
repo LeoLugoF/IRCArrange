@@ -1,6 +1,7 @@
 import sys
 import os
 import re
+import platform
 
 #########################################################################
 #                              IRCArrange                               #
@@ -25,6 +26,9 @@ import re
 DictLines = {}
 Reversed = False
 FilePath = ""
+OSplit = "\\"
+if platform.system() == "Linux":
+    OSplit = "/"
 
 def ReadFile(FilePath):
     """Reads the irc output file"""
@@ -98,7 +102,7 @@ for arg in sys.argv:
     if ".py" in arg:
         pass
     if ".out" in arg or ".log" in arg or ".OUT" in arg or ".LOG" in arg: 
-        FilePath = os.getcwd() + "\\" + arg
+        FilePath = os.getcwd() + OSplit + arg
     if "-r" in arg:
         Reversed = True
 
