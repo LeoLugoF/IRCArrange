@@ -70,7 +70,7 @@ def ReadFile(FilePath):
             NewList.pop(0)
             NewList.pop(1)
             NewList[0] = DictAtomicN[NewList[0]]
-            string = "\t".join(NewList) +"\n"
+            string = "\t ".join(NewList) +"\n"
             try:
                 DictLines[LineNumber] += string
             except:
